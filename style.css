@@ -26,6 +26,7 @@ body {
 }
 #mapArea .tourist img {
     position: absolute;
+    width: 4%;
 }
 #mapArea .companyName {
     position: absolute;
@@ -39,22 +40,22 @@ body {
 
 
 #mapArea #waemok * { left: 30%; top: 6%; }
-#mapArea #waemok .companyName {margin-left: 1%; margin-top: 5%;}
+#mapArea #waemok .companyName {margin-left: 0%; margin-top: 3%;}
 
 #mapArea #yongmuchi * { left: 36%; top:9%; }
 #mapArea #yongmuchi .companyName {margin-left: 0%; margin-top: 4%;}
 
 #mapArea #sapgyo * { left: 82%; top: 51%; }
-#mapArea #sapgyo .companyName {margin-left: -1%; margin-top: 6%;}
+#mapArea #sapgyo .companyName {margin-left: -2%; margin-top: 4%;}
 
 #mapArea #myeoncheon * { left: 55%; top: 71%; }
-#mapArea #myeoncheon .companyName {margin-left: 0%; margin-top: 5%;}
+#mapArea #myeoncheon .companyName {margin-left: -1%; margin-top: 4%;}
 
 #mapArea #solmoe * { left: 77%; top: 71%; }
-#mapArea #solmoe .companyName {margin-left: 3%; margin-top: 5%;}
+#mapArea #solmoe .companyName {margin-left: 3%; margin-top: 4%;}
 
 #mapArea #hapdeok * { left: 74%; top: 77%; }
-#mapArea #hapdeok .companyName {margin-left: -1%; margin-top: 4%;}
+#mapArea #hapdeok .companyName {margin-left: -2%; margin-top: 4%;}
 
 
 
