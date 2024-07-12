@@ -28,6 +28,11 @@ body {
     position: absolute;
     width: 4%;
 }
+#mapArea .coffee img {
+    position: absolute;
+    width: 3%;
+}
+
 #mapArea .name {
     position: absolute;
     width: auto;
@@ -37,15 +42,21 @@ body {
     margin-top: 4%;
 }
 
+
 #mapArea #waemok * { left: 30%; top: 6%; }
 #mapArea #yongmuchi * { left: 36%; top:9%; }
 #mapArea #sapgyo * { left: 82%; top: 51%; }
 #mapArea #myeoncheon * { left: 55%; top: 71%; }
 #mapArea #solmoe * { left: 77%; top: 71%; }
 #mapArea #solmoe .name { margin-left: 3%; margin-top: 3% }
-#mapArea #hapdeok * { left: 74%; top: 77%; }
-
-
+#mapArea #hapdeok * { left: 70%; top: 77%; }
+#mapArea #goljeongji * { left: 60%; top: 70%; }
+#mapArea #gilmok * { left: 74%; top: 74%; }
+#mapArea #gilmok .name { margin-left: 3%; margin-top: 3% }
+#mapArea #hichichi * { left: 78%; top: 58%; }
+#mapArea #hichichi .name { margin-left: 3%; margin-top: 1% }
+#mapArea #sunnycoffee * { left: 82%; top: 47%; }
+#mapArea #sunnycoffee .name { margin-left: 3%; margin-top: 1% }
 
 #surf {
     position: absolute;
