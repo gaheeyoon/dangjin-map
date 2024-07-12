@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>두발지도 - 당진편</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="mapArea">
+      <img src="./map.jpg" alt="두발지도 - 당진편" id="map" />
+      <!-- <img src="./map_.jpg" alt="두발지도 - 당진편" id="map" /> -->
+      <!-- <img src="./icon/surf.png" alt="서퍼" id="surf" /> -->
+
+      <a
+        href="https://map.naver.com/p/search/%EC%99%9C%EB%AA%A9%EB%A7%88%EC%9D%84?c=15.00,0,0,0,dh"
+        class="tourist"
+        id="waemok"
+        target="_blank"
+      >
+        <img src="./icon/waemok.png" alt="왜목마을" />
+        <span class="companyName">왜목마을</span>
+      </a>
+
+      <a
+        href="https://map.naver.com/p/search/%EC%99%9C%EB%AA%A9%EB%A7%88%EC%9D%84?c=15.00,0,0,0,dh"
+        class="tourist"
+        id="yongmuchi"
+        target="_blank"
+      >
+        <img src="./icon/yongmuchi.png" alt="용무치항" />
+        <span class="companyName">용무치항</span>
+      </a>
+
+      <a
+        href="https://map.naver.com/p/search/%EC%99%9C%EB%AA%A9%EB%A7%88%EC%9D%84?c=15.00,0,0,0,dh"
+        class="tourist"
+        id="sapgyo"
+        target="_blank"
+      >
+        <img src="./icon/sapgyo.png" alt="삽교호 함상공원" />
+        <span class="companyName">삽교호 함상공원</span>
+      </a>
+
+      <a
+        href="https://map.naver.com/p/search/%EC%99%9C%EB%AA%A9%EB%A7%88%EC%9D%84?c=15.00,0,0,0,dh"
+        class="tourist"
+        id="myeoncheon"
+        target="_blank"
+      >
+        <img src="./icon/myeoncheon.png" alt="면천 콩국수" />
+        <span class="companyName">면천 콩국수</span>
+      </a>
+
+      <a
+        href="https://map.naver.com/p/search/%EC%99%9C%EB%AA%A9%EB%A7%88%EC%9D%84?c=15.00,0,0,0,dh"
+        class="tourist"
+        id="solmoe"
+        target="_blank"
+      >
+        <img src="./icon/solmoe.png" alt="솔뫼성지" />
+        <span class="companyName">솔뫼성지</span>
+      </a>
+
+      <a
+        href="https://map.naver.com/p/search/%EC%99%9C%EB%AA%A9%EB%A7%88%EC%9D%84?c=15.00,0,0,0,dh"
+        class="tourist"
+        id="hapdeok"
+        target="_blank"
+      >
+        <img src="./icon/hapdeok.png" alt="합덕재래시장" />
+        <span class="companyName">합덕재래시장</span>
+      </a>
+    </div>
+    <!-- <div id="mapList">
+      <ul class="cafe">
+        <li class="category">
+          <img src="./icon/coffee.png" alt="Cafe" />
+          <span>Cafe</span>
+        </li>
+        <li>
+          <a href="https://blog.naver.com/hlogs/222986640662" class="coffee">
+            <span class="companyName">샌드힐카페</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://blog.naver.com/hlogs/223117411275" class="coffee">
+            <span class="companyName">포리뉴</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://blog.naver.com/hlogs/222983017717" class="coffee">
+            <span class="companyName">카페49</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://blog.naver.com/hlogs/222984717978" class="coffee">
+            <span class="companyName">쁘띠산토리니</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://blog.naver.com/hlogs/223074285676" class="coffee">
+            <span class="companyName">컨츄리로드커피</span>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="restaurant">
+        <li class="category">
+          <img src="./icon/clam.png" alt="Restaurant" />
+          <span>Restaurant</span>
+        </li>
+        <li>
+          <a
+            href="https://blog.naver.com/hlogs/223127220900"
+            class="restaurant"
+          >
+            <span class="companyName">신두리식당</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="restaurant">
+            <span class="companyName">어촌집</span>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="calture">
+        <li class="category">
+          <img src="./icon/note.png" alt="Culture" />
+          <span>Culture</span>
+        </li>
+        <li>
+          <a href="#" class="culture">
+            <span class="companyName">오락발전소</span>
+          </a>
+        </li>
+      </ul>
+    </div> -->
+
+    <footer>
+      Copyright 2023.
+      <a href="https://www.instagram.com/yoon.gahee/" target="_blank">gahee</a>
+      All rights reserved.
+    </footer>
+  </body>
+  <script>
+    function moveSurfRandomLocation() {
+      randLeft = Math.random() * 40;
+      maxTop = -0.76 * randLeft + 40;
+      randTop = Math.random() * maxTop;
+
+      $("#surf").css("left", randLeft + "%");
+      $("#surf").css("top", randTop + "%");
+      $("#surf").animate({ left: "+=15%" }, 2000);
+    }
+
+    loop = setInterval(moveSurfRandomLocation, 10000);
+  </script>
+</html>
