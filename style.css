@@ -11,7 +11,7 @@
 body {
     background-color: rgb(240, 239, 233);
 }
-#mapArea, #mapList, footer {
+#mapArea, #mapList, #btnArea, footer {
     width: 100%;
     max-width: 1200px;
     position: relative;
@@ -93,15 +93,19 @@ body {
     font-weight: lighter;
     line-height: 1.3;
 }
-#mapList li .tag {
+
+#mapList li .tag, #mapList li .tour, #mapList li .discount{
     font-size: 18px;
     font-weight: lighter;
+}
+#mapList li .tag {
     color: crimson;
 }
 #mapList li .tour {
-    font-size: 18px;
-    font-weight: lighter;
     color: cadetblue;
+}
+#mapList li .discount {
+    color: rgb(136, 10, 96);
 }
 
 #mapList a {
@@ -115,6 +119,25 @@ body {
     background-color: rgb(224, 235, 246);
 }
 
+#btnArea {
+    margin-top: 10px;
+    text-align: right;
+    padding-top: 20px;
+}
+
+#btnArea a {
+    text-decoration: none;
+}
+
+#recommandBtn {
+    border: 3px solid saddlebrown;
+    background-color: saddlebrown;
+    color: white;
+    font-family: KOTRAHOPE;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 footer {
     padding: 80px 0px 30px 0px;
     text-align: center;
@@ -122,6 +145,16 @@ footer {
 footer a {
     text-decoration: none;
     color: #2a2a2a;
+}
+footer img {
+    padding-bottom: 10px;
+}
+footer p {
+    margin-bottom: 20px;
+    color: #323232
+}
+footer img {
+    width: 150px;
 }
 
 @media (min-width: 1500px) {
